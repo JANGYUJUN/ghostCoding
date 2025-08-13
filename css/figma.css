@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body {
+    background-color: #2c2c2c;
+    color: #fff;
+    font-family: sans-serif
+}
+
+.container {
+    width: 100%; /*뷰포트의 width를 의미*/
+    height: 100vh;/*뷰포트의 height를 의미*/
+    display: flex;/*콘테이너 안의 자식들을 오토레이아웃으로 묶겠다*/
+    flex-direction: column; /*세로축이 중심이 되는*/
+    gap: 90px;/*이미지와 글자 사이의 갭*/
+    justify-content: center; /* 메인축으로의 정렬 */
+    align-items: center;/* 교차축으로의 센터정렬 */
+}
+
+img {
+    width: 90px; 
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center; /*글자를 가운데 정렬하겠다.*/
+    line-height: 100%; /*행간 100%일경우 1로 작성*/
+    letter-spacing: 0.5px; /*자간 50%일경우 0.5로 작성*/
+}
