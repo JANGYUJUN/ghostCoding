@@ -31,14 +31,9 @@ body {
 .all-container {
     width: 100%; /*뷰포트의 width를 의미*/
     height: 100vh;/*뷰포트의 height를 의미 vh는 화면 비율에 맞춘 개념이므로 %는 부모로부터 물려받는 속성이므로 화면 비율에 맞추고 싶으면 vh, vw를 사용할 것*/
-    display: flex;/*콘테이너 안의 자식들을 오토레이아웃으로 묶겠다*/
-    flex-direction: column; /*세로축이 중심이 되는*/
-    gap: 150px;/*이미지와 글자 사이의 갭*/
-    justify-content: center; /* 메인축으로의 정렬 */
-    align-items: center;/* 교차축으로의 센터정렬 */
 }
 
-.link-comtainer {
+.link-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -46,8 +41,13 @@ body {
 } 
 
 
-.link .container:first-child {
-    border: ;
+.link-container a :first-child {
     border-radius: 10px;
     background-color: #1e1e1e;
+}
+
+.link-container a:last-child {
+    border-radius: 10px;
+    border: 5px;
+    border-color: #fff;
 }
