@@ -4,17 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom트리 구조</title>
+<style>
+        ol li { 
+            background-color: olive;
+            font-size: 12px;
+        }
+
+        ul li { 
+            background-color: gold;
+            font-size: 30px;
+        }
+        
+        h1 {
+            color: red; 
+            color: blue; 
+            color: green;
+        }
+    </style>
 </head>
 <body>
+
+    &lt;h1&gt;태그는 가장 큰 헤딩요소이다.
     <header>
         <h1>CODING CAMP</h1>
+        <nav>
+            <ul><!-- Unordered List 순번이 없는 목록-->
+                <li><!-- Li는 List Item 이라는 뜻-->
+                    <a href="./001.html">About</a>
+                </li>
+                <li>
+                    <a href="./002.html">Product</a>
+                </li>
+                <li>
+                    <a href="./003.html">Contacus</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+   
+
     <main>
         <h2>Apple</h2>
         <p>Mango</p>
+        <ol start="10" type="I">
+            <!--
+            Ordered List 순번이 있는 목록
+            만약 ol 이냐 ul의 타입을 바꿔야한다면, html type 속성을 쓰지말고, css로 처리하도록 하는 것이 웨표준이다.
+            -->
+            <li>
+                Ordered List 1
+                <ul>
+                    <li><a href="#">Sub menu 1</a></li>
+                    <li><a href="#">Sub menu 2</a></li>
+                </ul>
+            </li>
+            <li>Ordered List 2</li>
+            <li>Ordered List 3</li>
+        </ol>
     </main>
+
+    
     <footer>
-        <p>@copy; copyrights</p>
+        <p>&copy; copyrights</p>
     </footer>
 
 </body>

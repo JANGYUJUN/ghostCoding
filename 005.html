@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Javascript</title>
+    <style>
+        button, a {
+            background-color: dodgerblue;
+            color: #fff;
+            border-radius: 30px;
+            height: 48px;
+            width: 200px;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Hello Javascript</h1>
+    <button type="button" id="btn1">Click me!</button>
+    <button type="button" id="btn2">CLick me!</button>
+    <a href="#">A tag</a>
+
+    <script>
+        const h1 = document.getElementById('title');   
+        const btn1 = document.getElementById('btn1');
+        const btn2 = document.getElementById('btn2');
+        
+        h1.style.color ='tomato';
+
+        btn1.addEventListener('click',() => {h1.style.color = 'olive'})
+        btn2.addEventListener('click',() => {h1.style.color = 'tomato'})
+    </script>
+    
+</body>
+</html>
