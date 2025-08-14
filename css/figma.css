@@ -16,11 +16,12 @@ body {
     align-items: center;/* 교차축으로의 센터정렬 */
 }
 
-.contaoner img {
+.container img {
     width: 90px;/*높이든 넓이든 하나만 지정하면 브라우저가 자동으로 깨지지 않는 크기로 조정해줌*/ 
 }
 
-.container p {
+.container p
+.slogan-container {
     font-size: 18px;
     font-weight: 600;
     text-align: center; /*글자를 가운데 정렬하겠다.*/
@@ -29,25 +30,59 @@ body {
 }
 
 .all-container {
-    width: 100%; /*뷰포트의 width를 의미*/
-    height: 100vh;/*뷰포트의 height를 의미 vh는 화면 비율에 맞춘 개념이므로 %는 부모로부터 물려받는 속성이므로 화면 비율에 맞추고 싶으면 vh, vw를 사용할 것*/
+    min-width: 272px;
+    width: calc(100% - 100px); /*왼쪽 오른쪽 여백 50px을 주고 싶으니까 100px로 계산*/
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 200px 0 70px;
+    margin: 0 auto 0; /*top 좌 우 butoom*/
+}
+
+.slogan-container {
+    
+}
+
+.slogan-container img {
+    width: 100%;
+    margin-bottom: 38px;
 }
 
 .link-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.link-container a {
+    width: 100%;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
     justify-content: center;
-} 
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    line-height: 1;
+}
 
-
-.link-container a :first-child {
-    border-radius: 10px;
+.link-container a:first-child {
     background-color: #1e1e1e;
 }
 
 .link-container a:last-child {
-    border-radius: 10px;
-    border: 5px;
-    border-color: #fff;
+    border: 2px solid #fff;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link-container a:hover {
+    color: gold;
 }
