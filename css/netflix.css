@@ -4,7 +4,10 @@ body {
 margin: 0;
 color: white;
 font-family: arial sans-serif;
-background: url(../images/neflix\ background\ image); 
+background:  linear-gradient(
+            rgba(0, 0, 0, 0.6) 0%,   /* 위쪽 딤 */
+            rgba(0, 0, 0, 0.6) 100%  /* 아래쪽 딤 */
+        ),url(../images/neflix\ background\ image); 
 background-repeat: no-repeat; 
 background-position: center center;
 background-size: cover;
