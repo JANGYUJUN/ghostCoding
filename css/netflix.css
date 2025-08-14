@@ -39,6 +39,7 @@ select {
     background-color: black;
     color: white;
     font-weight: bold;
+    
 }
 
 header button {
@@ -58,6 +59,10 @@ h1 {
 
 h2 {
     font-weight: normal;
+}
+
+p {
+   margin-top: 100px; 
 }
 
 .div text {
@@ -80,6 +85,7 @@ input {
     height: 50px;
     background-color: black;
     border-radius: 5px;
+    border-color: rgb(rgb(144, 139, 139), green, blue);
     font-weight: bold;
 }
 
