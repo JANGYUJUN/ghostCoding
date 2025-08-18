@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0814</title>
     <style>
+        :root {
+             --primary: #d81e27; /*변수 선언은 무조건 - 2개가 붙어야함 */
+             --title: 56px;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
         body {
-           background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(105, 0, 80, 1) 38%, rgba(176, 70, 123, 1) 71%, rgba(0, 0, 0, 1) 100%);
+           background: rgb(rgb(0, 88, 0), green, blue);
+           color: rgb(209, 255, 212) green blue)
             /*
             background-color: rgba(2, 107, 67, 0.952);
             color: rgba(190, 238, 219, 0.952);;
@@ -72,15 +82,32 @@
 
         }
         
+        .title {
+            color: var(--primary);
+            font-size: var(--title);
+        }
+
+        em {
+            font-size: 1rem;
+        }
+
+        i {
+            font-size: 1em;
+        }
     </style>
-</head>
+
 <body>
+    <em>Hello World</em> 
+    <i>World</i>
     <div class="thumb">
         <img src="./images/irangi_0.png">
     </div>
     <div class="thumb-ir">
         <span class="blind">ilust images</span>
     </div>
+
+    <h1 class=title>Heading</h1>
+
     <section>
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quia cumque impedit laudantium fugit tempora omnis? Hic pariatur, saepe eius ipsum vitae molestiae a animi neque odio sint impedit nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quia cumque impedit laudantium fugit tempora omnis? Hic pariatur, saepe eius ipsum vitae molestiae a animi neque odio sint impedit nesciunt.  
