@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .tbox {
+            max-width: 800px;
+            width: 100%;
+            margin: 50px auto;
+        }
+
+        .tbox th[scope="col"] {
+            background-color: rgb(119, 9, 119);
+            color: #FFF;
+        }
+
+        .tbox th[scope="row"] {
+            background-color: #f3f3f3;
+        }
+        /* [scope="row"]이친구한테만 백그라운드 색깔을 주겠다는 뜻 (ㄷ자 괄호) */
+
+        .tbox td {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="tbox">
+        <caption>성적표(table태그 first child한테만 쓸 수 있는 태그)</caption>
+        <colgroup>
+            <col style="width: 240px;">
+            <col style="width:calc((100% - 240px / 3));" span="3";> 
+        </colgroup>
+        <!-- 콜그룹은 행태그 전에 쓴다. 열의 크기를 주려고 사용한다. -->
+        <thead> <!--td 태그가 오면 안됨-->
+        <tr>
+            <th scope="col">이름</th>
+            <th scope="col">국어</th>
+            <th scope="col">영어</th>
+            <th scope="col">수학</th>
+        </tr>
+        </thead>
+         <tfoot>
+            <tr>
+                <th scope="row">average</th>
+                <th>70</th>
+                <th>40</th>
+                <th>50</th>
+            </tr>
+        </tfoot>
+        <!-- 열제목은 th scope="col"로 마크업한다. -->
+        <!-- 행제목은 th scope="row"로 마크업한다. -->
+        <tbody>
+        <tr>
+            <th scope="row">홍길동</th>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+         <th scope="row">장유준</th>
+         <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">렌고쿠</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        </tbody>
+       
+    </table>
+</body>
+</html>
