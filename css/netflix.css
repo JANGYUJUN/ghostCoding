@@ -102,23 +102,18 @@ input {
 }
 
 .more {
+    max-width: 1000px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px;
-
-
-}
-
-.title-group {
-    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: linear-gradient(90deg, #231831, #1D1937, #191B3C);
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #231831, #1D1937, #191B3C);
     color: #fff;
     padding: 20px;
     border-radius: 12px;
-    gap: 170px;
+
 }
 
 .title-group h2 {
@@ -134,7 +129,7 @@ input {
     text-align: left;
 }
 
-.title-group a {
+a {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
