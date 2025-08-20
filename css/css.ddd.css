@@ -16,7 +16,7 @@ caption {
 
         table {
             border-top: 2px solid black;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid rgb(127, 127, 127);
         }
         
         .tbox {

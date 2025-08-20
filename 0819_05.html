@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+
+         .thumb {
+            width: 200px;
+            height: 170px;
+            /* overflow: hidden; */
+            border-radius: 12px;
+            margin: 50px auto;
+            border: 1px solid red;
+            box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+            transition: 0.5s;
+            position: relative;
+            /* btn_like를 이미지 왼쪽하단에 놔야하기 때문에 rerlativ로 btn_like의 부모인 thumb에 포지션을 지정해주기
+               따라서 자식 영역에 포지션을 absolute로 줌으로써 자식 영역이 브라우저에 귀속되는게 아닌 
+               부모 영역에 귀속되도록 해주는 것임 */
+        }
+
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn_like {
+            width: 36px;
+            height: 36px;
+            outline: 1px solid red;
+            background-image: url(./images/icons/cafe.svg);
+            background-size: 24px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background 순서: 포지션뒤에 /하고 사이즈 넣어야 반영됨 => (이미지, 노리핏, 센터 센터/사이즈) */
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+
+        .btn_facebook {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            background: dodgerblue url("./images/icons/sns_facebook.png") no-repeat center center/contain;
+            top: 18px;
+            right: 55px;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+
+        .btn_facebook:hover {
+            background-color: tomato;
+            transition: 0 -0.8px;
+            
+        }
+
+        .btn_like:hover {
+            background-image: url(./images/irangi_3.png);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="thumb">
+        <img src="./images/irangi_4.png" alt="사진2">
+        <button type="button" class="btn_like">
+            <span class="blind">좋아요</span>
+        </button>
+        <a href="#" class="btn_facebook">
+            <span class="blind">facebook</span>
+        </a>
+    </div>
+</body>
+</html>
