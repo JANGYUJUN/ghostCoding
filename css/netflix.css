@@ -116,6 +116,11 @@ input {
 
 }
 
+.more:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
 .title-group h2 {
     font-size: 18px;
     margin: 0;
@@ -139,6 +144,6 @@ a {
     top: 50%;
 }
 
-.title-group a:hover {
+a:hover {
     background-color: #e50914;
 }
