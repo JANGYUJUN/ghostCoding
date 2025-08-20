@@ -107,7 +107,7 @@ input {
     display: flex;
     padding: 50px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 180px;
     background: linear-gradient(90deg, #231831, #1D1937, #191B3C);
     justify-content: space-between;
     align-items: center;
@@ -124,14 +124,14 @@ input {
 }
 
 .title-group h2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     margin: 0;
     text-align: left;
 }
 
 .title-group p {
-    font-size: 14px;
+    font-size: 13px;
     margin: 5px 0 0;
     color: #cfcfcf;
     text-align: left;
@@ -143,7 +143,7 @@ a {
     color: #fff;
     padding: 10px 16px;
     border-radius:6px;
-    font-size: 14px;
+    font-size: 13px;
     top: 50%;
 }
 
