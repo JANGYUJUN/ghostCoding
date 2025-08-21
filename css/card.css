@@ -1,12 +1,8 @@
 @charset "utf-8";
 
         body {
-           background-color: #c8d6f4;
-           min-height: 100svh;
-           display: grid;
-           place-items: center;
-           padding: 24px;
-        }
+            height: 2000px;
+                }
 
         .card-container {
             max-width: 360px;
@@ -15,7 +11,23 @@
             overflow: hidden;
             border-radius: 16px;
             outline: 1px solid rgba(0,0,0,.08);
+            background-color: #c8d6f4;
+            min-height: 100svh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
         }
+
+        .card-container .content {
+            background-color: #fff;
+            padding: 120x;
+            border-radius: 0 0 12px 12px;
+            position: relative;
+        }
+
+         .card-container .content strong {
+
+         }
 
         .card {
             background: #fff;
@@ -25,17 +37,28 @@
             box-shadow: 0 12px 28px rgba(0,0,0,.08);
         }
 
-        .thumb {
+        .card-container .thumb {
             background-color: #4a7cf2;
             height: 200px;
             aspect-ratio: 16/10;
             overflow: hidden;
+            border-radius: 12px 12px 0 0;
+            position: relative;
         }
 
-        .thumb img {
+        .card-container .thumb img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .card-container .dimm {
+            position: absolute;
+            left: 0; 
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 00.3);
         }
 
         .content {
@@ -71,12 +94,61 @@
             border: 1px solid #dfe5f2;
             border-radius: 30px;
         }
-
-       .card-container .tag-container {
-
-       } 
         
         .tag-container a::before {
-            content: #;
+            content: ;
             margin: 0 4px 00;
+        }
+
+        .btn_profile {
+            width: 60px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            right: 30px;
+            top: 0;
+            translate: 0 -50%;
+            margin-left:280px;
+            position: absolute;
+        }
+
+        .card-container .btn_profile img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn_top {
+            background-color: tomato;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+
+        .dimm {
+            position: fixed;
+            /* left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%; */
+            inset: 0 0 0 0; /* 상 우 하 좌 */
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0, 0.7);
+           
+        }
+
+        .modal {
+            z-index: 101; /*z-index는 딥보다 아래 있는 것을 강제로 딤 앞으로 끌어오기 위해 사용하는 태그*/
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            background-color: gold;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+
+
+            
+            
+            /* left: calc(50% - 150px);
+            top: calc(50% - 150px); */
         }

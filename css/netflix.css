@@ -1,9 +1,9 @@
-@charset "utf-8";
+
 
 body {
 margin: 0;
 color: white;
-font-family: arial sans-serif;
+font-family: arial, sans-serif;
 background:  linear-gradient(
             rgba(0, 0, 0, 0.6) 0%,   /* 위쪽 딤 */
             rgba(0, 0, 0, 0.6) 100%  /* 아래쪽 딤 */
@@ -41,7 +41,6 @@ select {
     background-color: black;
     color: white;
     font-weight: bold;
-    background-image: ;
     
 }
 
@@ -67,11 +66,6 @@ h2 {
 
 p {
    margin-top: 50px; 
-}
-
-.div text {
-    display: flex;
-    gap: 30px;
 }
 
 .emailform {
@@ -114,13 +108,13 @@ input {
     color: #fff;
     padding: 20px;
     border-radius: 12px;
+     transition: 0.4s;
 
 }
 
 .more:hover {
   filter: brightness(1.2);
   transform: scale(1.05);
-  transition: 0.4s;
 }
 
 .title-group h2 {
@@ -138,7 +132,6 @@ input {
 }
 
 a {
-    text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     padding: 10px 16px;
@@ -149,4 +142,58 @@ a {
 
 a:hover {
     background-color: #e50914;
+}
+
+.content{
+  max-width: 1200px;
+  margin: 48px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+.content h3{
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.content ol{
+  display: flex;
+  gap: 24px;
+}
+
+/* 카드 1개 컨테이너 */
+.content ol > ul {
+  list-style: none;
+  position: relative;
+  width: 260px;                 
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+  transition: transform .2s ease, filter .2s ease;
+}
+
+.content ol > ul > img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  background: #222;
+}
+
+.content ol > ul:hover {
+  transform: translateY(-4px) scale(1.02);
+  filter: brightness(1.05);
+}
+
+.content ol > ul::before{
+  content: "1";
+  position: absolute;
+  left: -14px; 
+  bottom: -12px;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(255,255,255,.95);
+  text-shadow: 0 8px 18px rgba(0,0,0,.6);
+  pointer-events: none;
 }
