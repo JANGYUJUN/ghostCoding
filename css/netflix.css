@@ -131,7 +131,7 @@ input {
     text-align: left;
 }
 
-a {
+.more a {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     padding: 10px 16px;
@@ -140,7 +140,7 @@ a {
     top: 50%;
 }
 
-a:hover {
+.more a:hover {
     background-color: #e50914;
 }
 
@@ -197,3 +197,80 @@ a:hover {
   text-shadow: 0 8px 18px rgba(0,0,0,.6);
   pointer-events: none;
 }
+
+h2 + .faq-list {
+  max-width: 1200px;
+  margin: 32px auto 80px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.faq-list details {
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.faq-list summary {
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 24px 54px 24px 24px;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-list summary:hover {
+  background: #3a3a3a;
+}
+
+.faq-list details > div {
+  background: #1f1f1f;
+  color: #d9d9d9;
+  padding: 0 24px 30px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.faq-list a {
+  background: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.faq-list summary::after {
+  content: "";
+  background: url(../images/icons/add.svg) no-repeat center center/contain;
+  right: 24px;
+  top: calc(50% - 12px);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.faq-list details[open] summary::after {
+  transform: rotate(45deg);
+  
+}
+
+.bottom {
+  max-width: 1200px;
+  padding: 0 20px;
+  text-align: left; 
+}
+
+.bottom select {
+  margin-bottom: 15px;
+}
+ 
+.bottom h6 a {
+  text-decoration: underline;
+  color: #478CEC;
+}
+
