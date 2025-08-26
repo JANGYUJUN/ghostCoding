@@ -14,29 +14,21 @@
             <li>
                 <a href="#">Gmail</a>
             </li>
-        </ul>
-        <ul>
             <li>
                 <a href="#">이미지</a>
             </li>
-        </ul>
-        <ul>
             <li>
                 <button type="button">
                     <img src="./images/icons/구글 nav 실험실 아이콘.svg" alt="실험실">
                     <span class="blind">search laps</span>
                 </button>
             </li>
-        </ul>
-        <ul>
             <li>
                 <button type="button">
                     <img src="./images/icons/구글 nav 더보기 메뉴 아이콘.svg" alt="메뉴">
                     <span class="blind">goolge menu</span>
                 </button>
             </li>
-        </ul>
-        <ul>
             <li>
                 <button type="button">
                     <img src="./images/프로필 사진.svg" alt="프로필">
@@ -46,18 +38,27 @@
         </ul>
     </nav>
 
-    <div class="main-container">
-        <h1>Google</h1>
-        <div class="search-container">
-            <button type="submit" class="blind">검색</button>
-            <button type="submit" class="voice search">음성검색</button>
-            <button type="submit" class="images search">이미지검색</button>
-        </div>
-    </div>
+    
+        <div class="main-container">
+            <h1>Google</h1>
+            <div class="search-container">
+                <button type="submit" class="search"><span class="blind">검색</span></button>
+                <input type="text" placeholder="Goole 검색 또는 URL 입력">  
+                <div class="action">
+                    <button type="button" class="voice"><span class="blind">음성검색</span></button>
+                    <button type="button" class="images"><span class="blind">이미지검색</span></button>
+                </div>
+            </div>
+     </div>
+    
 
     <ul>
-        <li>
-            <a href="#">명지대학교</a>
+        <li class="site">
+            <div class="favicon">
+                <a href="#">
+                    <span>명지대학교</span>
+                </a>
+            </div>
             <button type="button">
                 <span class="blind">옵션보기</span>
             </button>
