@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(../images/어두운배경.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 24px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+nav button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+nav a {
+    width: 34px;
+    height: 24px;
+    padding: 10px;
+}
+
+nav button {
+    padding: 5px;
+}
+

@@ -162,7 +162,7 @@ input {
 }
 
 /* 카드 1개 컨테이너 */
-.content ol > ul {
+.content ol > li {
   list-style: none;
   position: relative;
   width: 260px;                 
@@ -188,7 +188,7 @@ input {
 .content ol > ul::before{
   content: "1";
   position: absolute;
-  left: -14px; 
+  left: -34px; 
   bottom: -12px;
   font-size: 140px;
   font-weight: 900;
