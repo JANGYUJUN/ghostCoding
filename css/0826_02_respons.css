@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+body {
+            background-color: gray;
+            
+        }
+
+          .btn_ham {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+
+        @media all and (max-width:1200px) {
+            body {
+                background-color: tomato;
+            }
+        }
+
+        @media all and (max-width:1024px) {
+            body {
+                background-color: olive;
+            }
+            .container li {
+                width: calc((100% - 20px) / 3 );
+            }
+            .container li:last-child {
+                width: 90%;
+            }
+
+        }
+
+        @media all and (max-width:764px) {
+            body {
+                background-color: gold;
+            }
+            .btn_ham {
+                display: flex;
+            }
+            .btn-close {
+                display: inline-block;
+            }
+            .gnb-container {
+                position: fixed;
+                right: -310px;
+                top: 0;
+                height: 100vh;
+                width: 300px;
+            }
+            .gnb-container ul {
+                display: block;
+                height: auto;
+                padding-top: 100px;
+            }
+
+        }
+
+        @media all and (max-width:480px) {
+            body {
+                background-color: blueviolet;
+            }
+            .container ul {
+                flex-direction: column;
+            }
+            .container li {
+                width: auto;
+            }
+        }
+
+        @media all and (max-width:375px) {
+            body {
+                background-color: pink;
+            }
+        }
+
+        .container {
+            max-width: 1032px;
+            width: 100%;
+            margin: 50px auto;
+            padding: 0 16px;
+            outline: 1px solid blue;
+        }
+
+        ul {
+            outline: 1px solid red;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        li {
+            background-color: skyblue;
+            width: calc((100% - 30px) / 4);
+            flex-shrink: 0;
+           
+            /* flex-grow: 부모영역에 맞게 채워라
+               flex-shrink: 부모한테 공간이 부족하면 같은 비율로 줄어들어라(0으로하면 부모 영역에서 벗어나겠지)
+               flex-basis: 메인축으로의 크기 */
+        }
+
+        li:nth-child(3n-1) {
+            /* 2(3-1), 5(6-1)의 순번이 만들어짐 */
+            background-color: teal;
+        }
